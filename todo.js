@@ -4,7 +4,28 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 
 const TODOS_LS = "toDos";
 
-const toDos = [];
+let toDos = [];
+
+function deleteToDo(event) {
+  const btn = event.target;
+  //   console.log(btn);
+  const btnLi = btn.parentNode;
+  //   console.log(btnLi);
+  //   console.log(btnLi);
+  toDoList.removeChild(btnLi);
+
+  const newToDos = toDos.filter(function(toDo) {
+    // console.log(typeof btn.id, typeof toDo.id);
+    return toDo.id !== parseInt(btnLi.id);
+    // toDo.id => number
+    // btnLi.id => String (inside the element)
+    // number로 변환해서 array에 넣는다. parseInt
+    // isNaN(), typeOf => string or number
+  });
+  //   console.log(newToDos);
+  toDos = newToDos; //  Old data => New data
+  saveToDos();
+}
 
 function saveToDos() {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
@@ -16,6 +37,7 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDos.length + 1;
   delBtn.innerText = "❌";
+  delBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   ElLi.appendChild(span);
   ElLi.appendChild(delBtn);
@@ -60,6 +82,21 @@ init();
 // => JSON.stringify
 // JSON.stringify는 자바스크립트 Object를 String으로 바꿔준다.
 // parsing means it understands JSON.stringify
-// forEach => array에 담겨있는 것들을 각각 한번 씩 함수를 실행시켜준다.
+// forEach => array에 담겨있는 것들을 각 각 한번 씩 함수를 실행시켜준다.
 // 화면에 뿌려줄 때는 JSON.parse,
 // 데이터 형태로 저장할 때는 String 형태로. JSON.stringify
+
+// TO DELETE
+// 1. HTML에서 지워야 한다. (addEventListener 사용)
+//   * which 버튼이 클릭 되었는지 알아야 한다. => event.target (returns triggered element)
+//   * console.dir(event.target); => 해당 객체 내용을 보여준다.
+//   * parentNode 를 찾는다. event.target.parentNode
+//   * Node.removeChild()
+
+//  *  console.log(event.target.parentNode);
+
+// 2.'local storage' 에서 'to do' delete => and then 'save'
+
+// filter runs a function through every item in the array
+// and then makes a new array with return 'true'
+// => [create an array with 'returned true' items]
