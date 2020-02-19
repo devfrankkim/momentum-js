@@ -1,7 +1,18 @@
 # Cloning MOMENTUM using Vanilla JavaScript and local storage only
 
-Using "classList", you can add or remove a class without affecting any others the element may have. But if you assign "className", it will wipe out any existing classes while adding the new one (or if you assign an empty string it will wipe out all of them).
+I've created a momentum app where you can make a TO-DO-LIST for setting your goals aand make them happen. 
 
-Assigning "className" can be a convenience for cases where you are certain no other classes will be used on the element, but I would normally use the "classList" methods exclusively.
+Minimalist time and weather on the new tab page.
+Keep up with time.
 
-And "classList" also has handy "toggle" and "replace" methods.
+----
+## Set your goals and make them happen
+>
+1. Decide. Think of something you want to do or work towards. 
+2. Write it down carefully. 
+3. Tell someone. Telling someone we know about our goals also seems to increase the likelihood that we will stick at them.
+4. Break your goal down. This is especially important for big goals. 
+   * Use MOMENTUM APP
+5. Plan your first step. 
+6. Keep going. .
+7. Celebrate.
