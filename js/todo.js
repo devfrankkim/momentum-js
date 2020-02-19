@@ -34,11 +34,12 @@ function paintToDo(text) {
   //   console.log(text);
   const ElLi = document.createElement("li");
   const delBtn = document.createElement("button");
+  delBtn.classList.add("toDoButton");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerText = " ❌ ";
-  delBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
+  delBtn.innerText = "Finished 👍🏻";
+  delBtn.addEventListener("click", deleteToDo);
   ElLi.appendChild(span);
   ElLi.appendChild(delBtn);
   ElLi.id = newId;

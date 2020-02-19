@@ -3,7 +3,6 @@ const body = document.querySelector("body");
 const IMG_NUMBER = 3;
 
 function paintImage(imgNumber) {
-  console.log(1);
   const image = new Image();
   image.src = `images/${imgNumber + 1}.jpeg`;
   image.classList.add("bgImage");
