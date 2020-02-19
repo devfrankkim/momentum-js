@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700i&display=swap'");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap");
+
 body {
-  background-color: #ecf0f1;
+  background-color: #e0eaea;
 }
-.btn {
+
+.clock {
+  color: #e0eaea;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+}
+
+.delBtn {
   cursor: pointer;
 }
+
 h1 {
   color: #34495e;
   transition: color 0.5s ease-in-out;
@@ -14,7 +26,12 @@ h1 {
 
 .form,
 .greetings {
+  font-family: "Open Sans", sans-serif;
+
   display: none;
+  color: #ecf0f1;
+  text-align: center;
+  font-size: 20px;
 }
 
 .showing {
@@ -23,10 +40,10 @@ h1 {
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: -5;
   }
   to {
-    opacity: 1;
+    opacity: 3;
   }
 }
 
@@ -37,5 +54,37 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 0.9s linear;
+}
+
+#toDoBox {
+  margin: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  height: 20px;
+  left: 10px;
+  padding: 10px 0px;
+  position: relative;
+  top: 40%;
+  width: 300px;
+  text-align: center;
+}
+::placeholder {
+  color: white;
+}
+.toDoList {
+  font-family: "Playfair Display", serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: ;
+}
+
+#liList {
+  list-style-type: none;
 }

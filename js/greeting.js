@@ -24,7 +24,9 @@ function askForName() {
 function paintGreeting(currentValue) {
   form.classList.remove(SHOWING_CLASSNAME);
   greeting.classList.add(SHOWING_CLASSNAME);
-  greeting.innerText = `Hello ${currentValue}`;
+  greeting.innerText = ` You are doing great, ${currentValue}! 
+   
+  What's your main focus for today?`;
 }
 
 // querySelector => select the first one that he finds.

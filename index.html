@@ -7,18 +7,17 @@
     <title> Momentum </title>
  <body>
     <div class="js-clock">
-        <h1>00:00:00</h1>
+        <h1 class="clock">00:00:00</h1>
     </div>
     <form class="js-form form">
         <input type="text" placeholder=" What is your name?" />
 
     </form>
     <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder='write things to do'/>
+    <form class="js-toDoForm "  >
+        <input type="text" id="toDoBox" placeholder='write things to do'/>
     </form>
-    <ul class="js-toDoList">
-
+    <ul class="js-toDoList toDoList" id="liList">
     </ul>
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
