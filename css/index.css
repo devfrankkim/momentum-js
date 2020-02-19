@@ -109,3 +109,13 @@ h1 {
   border: 1px solid whitesmoke;
   color: rgb(243, 239, 237);
 }
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f83333;
+  color: white;
+  text-align: center;
+}

@@ -1,4 +1,4 @@
-# Cloning MOMENTUM using Vanilla JavaScript
+# Cloning MOMENTUM using Vanilla JavaScript and local storage only
 
 Using "classList", you can add or remove a class without affecting any others the element may have. But if you assign "className", it will wipe out any existing classes while adding the new one (or if you assign an empty string it will wipe out all of them).
 
