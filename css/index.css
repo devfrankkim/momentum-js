@@ -27,11 +27,18 @@ h1 {
 .form,
 .greetings {
   font-family: "Open Sans", sans-serif;
-
   display: none;
   color: #ecf0f1;
   text-align: center;
   font-size: 25px;
+}
+#nameBox {
+  background: transparent;
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  color: black;
+  border: 2px solid red;
 }
 .goal {
   font-family: "Roboto", sans-serif;
@@ -69,10 +76,10 @@ h1 {
   display: block;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #7f8c8d;
+  border-width: 1px 2em 1.5cm;
+  border-bottom: 3px solid #7f8c8d;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 25px;
   height: 30px;
   left: 10px;
   padding: 10px 0px;
@@ -82,17 +89,21 @@ h1 {
   text-align: center;
 }
 ::placeholder {
+  font-family: "Open Sans", sans-serif;
   color: antiquewhite;
+  size: 12px;
+  font-weight: bolder;
+  text-align: center;
 }
 .toDoList {
   font-family: "Playfair Display", serif;
   color: white;
   text-align: center;
-  font-size: 25px;
 }
 
 #liList {
   list-style-type: none;
+  font-size: 24px;
 }
 
 .toDoButton {
@@ -105,9 +116,16 @@ h1 {
   font-family: "Playfair Display", serif;
   font-weight: bolder;
   font-size: 20px;
-  top: 50px;
-  border: 1px solid whitesmoke;
+  position: absolute;
+  border: none;
+  background-color: #8080803b;
+  padding: 5px 20px 5px 20px;
+  top: 30px;
+  right: 10px;
   color: rgb(243, 239, 237);
+}
+#weather {
+  border: #008cba;
 }
 
 #footer {
@@ -115,7 +133,19 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f83333;
+  background-color: #167f3621;
   color: white;
   text-align: center;
+}
+
+#AudioBtn {
+  top: 50px;
+  margin: 80px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#music {
+  width: 80px;
+  height: 50px;
 }

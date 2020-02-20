@@ -2,8 +2,12 @@
 
 I've created a momentum app where you can make a TO-DO-LIST for setting your goals aand make them happen. 
 
-Minimalist time and weather on the new tab page.
-Keep up with time.
+* Minimalist time and weather on the new tab page.
+* Keep up with time. 
+* Jazz Music (on/off)
+* To-do-list
+* Local Storage data save
+* weather API
 
 ----
 ## Set your goals and make them happen

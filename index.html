@@ -6,18 +6,31 @@
     <link rel="stylesheet" href="./css/index.css">
     <title> Momentum </title>
  <body>
-     <span class="js-weather"></span>
-
+     <div>
+     <audio id="myAudio">
+        <source src="jazzPiano.mp3" type="audio/mpeg">
+     </audio>
+    </div>
+     <div >
+         <img id="music"  src="musicnote.png" alt="music tapes">
+     </div>
+     <span id="AudioBtn">
+       <button onclick="playAudio()" type="button">Play Music</button>
+       <button onclick="pauseAudio()" type="button">Pause Music</button> 
+    </span>
+    <span id="weather">
+       <span class="js-weather"></span>
+    </span>
     <div class="js-clock">
         <h1 class="clock">00:00:00</h1>
     </div>
     <form class="js-form form">
-        <input type="text" placeholder=" What is your name?" />
+        <input id="nameBox" type="text" placeholder=" What is your name?" size="30" />
     </form>
     <h4 class="js-greetings greetings"></h4>
     <h3 class="goal"></h3>
-    <form class="js-toDoForm "  >
-        <input type="text" id="toDoBox" placeholder='Make lists for yourself'/>
+    <form class="js-toDoForm">
+        <input type="text" id="toDoBox" placeholder='Make lists for yourself' />
     </form>
     <ul class="js-toDoList toDoList" id="liList">
     </ul>
@@ -26,6 +39,7 @@
     <script src="js/todo.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/audio.js"></script>
     <div>
       <footer id="footer">Photo & Code by Frank Kim&COPY;</footer>
     </div>  
