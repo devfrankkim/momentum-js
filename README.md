@@ -6,7 +6,7 @@ I've created a momentum app where you can make a TO-DO-LIST for setting your goa
 * Keep up with time. 
 * Jazz Music (on/off)
 * To-do-list
-* Local Storage data save
+* Local Storage data saved
 * weather API
 
 ----
